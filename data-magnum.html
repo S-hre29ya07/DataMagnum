@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data Magnum</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+	<style>
+		body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+
+		.card {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 200px;
+			height: 250px;
+			padding: 20px;
+			margin: 20px;
+			border-radius: 18px;
+			text-align: center;
+			box-shadow: 0px 0px 5px grey;
+            background: linear-gradient(to bottom, #f1e5ba, #e4c0b6);
+		}
+
+		.card-icon {
+			font-size: 50px;
+			margin-bottom: 10px;
+		}
+
+		.card-text {
+			font-size: 18px;
+			margin-bottom: 10px;
+            font-weight: 1500;
+		}
+
+		.card-button {
+			background-color: rgb(40, 110, 8);
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+            border-radius: 18px;
+            height: 40px;
+		}
+	</style>
+</head>
+<body>
+	<div class="card">
+        <div class="card-header">
+		<i class="fas fa-message card-icon"></i>
+    </div>
+    <div class="card-body">
+		<h3 class="card-text">ChatGPT Guide For Software Developers</h3>
+        <p>Get this guide now and achieve 10x more in software development than others!</p>
+    </div>
+    <div class="card-footer">
+		<a class="card-button" href="https://trackier.com/Resources/Reports_Guides/ChatGPT.pdf" download="FileName">Download Now</a>
+    </div>
+	</div>
+	<div class="card">
+        <div class="card-header">
+		<i class="fa fa-briefcase card-icon"></i>
+    </div>
+    <div class="card-body">
+		<h3 class="card-text">Front-End Developer Interview Kit</h3>
+        <p>Today, Start preparing to get your dream job!</p>
+    </div>
+    <div class="card-footer">
+		<a class="card-button" href="https://resources.workable.com/wp-content/uploads/2015/08/front-end-web-developer-interview-questions.pdf" download="FileName">Download Now</a>
+    </div>
+	</div>
+
+	<div class="card">
+        <div class="card-header">
+		<i class="fas fa-compass card-icon"></i>
+    </div>
+    <div class="card-body">
+		<h3 class="card-text">Front-End Developer Roadmap With Mini Guide</h3>
+         <p>Get step by step guide</p>
+        </div>
+        <div class="card-footer">
+		<button class="card-button" onclick="openDialog()">View Roadmap</button>
+    </div>
+	</div>
+
+	<div id="dialog" style="display: none;">
+		<p>Hello</p>
+		<button onclick="closeDialog()">Close</button>
+	</div>
+
+	<script>
+		function openDialog() {
+			document.getElementById("dialog").style.display = "block";
+		}
+
+		function closeDialog() {
+			document.getElementById("dialog").style.display = "none";
+		}
+	</script>
+</body>
+</html>
